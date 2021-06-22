@@ -2,7 +2,7 @@
 
 > TDD with Browserify, Mocha, Headless Chrome and WebDriver
 
-[![Build Status](https://travis-ci.org/mantoni/mochify.js.svg?branch=master)](https://travis-ci.org/mantoni/mochify.js)
+[![Build](https://github.com/mantoni/mochify.js/actions/workflows/test.yml/badge.svg)](https://github.com/mantoni/mochify.js/actions/workflows/test.yml)
 [![SemVer]](http://semver.org)
 [![License]](https://github.com/mantoni/mochify.js/blob/master/LICENSE)
 
@@ -142,7 +142,7 @@ Here is a minimal `.travis.yml`:
 ```yml
 language: node_js
 node_js:
-  - "8"
+  - "16"
 
 sudo: false
 
@@ -330,7 +330,7 @@ The `mochify` function returns a Browserify instance. Please refer to the
 
 ## Code coverage with NYC
 
-Install `nyc@14` (v15 is not yet supported!), the `babelify` transform,
+Install `nyc`, the `babelify` transform,
 `@babel/core` and `babel-plugin-istanbul`:
 
 ```bash
@@ -347,8 +347,30 @@ Using a `package.json` script that can be run with `npm run cover`:
 }
 ```
 
+## Workaround for Apple Silicon
+
+Puppeteer fails to launch on M1. Follow these steps to work around:
+
+- Install Google Chrome
+- Define these environment variables:
+
+  ```bash
+  export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+  export PUPPETEER_EXECUTABLE_PATH=/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+  ```
+
 ## Compatibility
 
+- v8.x
+    - Node Node 12.0+, Node 14.0+, Node 16.0+
+    - Mocha ^8.4
+    - Browserify ^16.5
+    - Puppeteer ^9.1
+- v7.x
+    - Node 10.0+, Node 12.0+, Node 14.0+
+    - Mocha ^5.2
+    - Browserify ^16.5
+    - Puppeteer ^5.3
 - v6.x
     - Node 6.0+, Node 8.0+, Node 10.0+
     - Mocha ^5.2

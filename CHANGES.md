@@ -1,5 +1,91 @@
 # Changes
 
+## 8.1.0
+
+- ✨ [`71f4376`](https://github.com/mantoni/mochify.js/commit/71f4376cc1bda70d9f71f38680c8c4fba03eb509)
+  Update puppeteer to 10.0.0 (#228) (Albert Wang)
+
+_Released by Frederik Ring on 2021-06-22._
+
+## 8.0.1
+
+- 🛡 [`20f8748`](https://github.com/mantoni/mochify.js/commit/20f874807581e908d8595238c4d060a31292ecf6)
+  Update transient `ws` dependency through npm audit (Frederik Ring)
+- 🛡 [`255aaea`](https://github.com/mantoni/mochify.js/commit/255aaea385aa81b924101abb9e07c03c7e053cca)
+  Update watchify package to v4.0.0 (#226) (Albert Wang)
+- 🛡 [`9a9e1ac`](https://github.com/mantoni/mochify.js/commit/9a9e1acd9065837fd37ba9a7152d11c13dfc4fa3)
+  Clean up package-lock.json (#227) (Albert Wang)
+- ✨ [`3179da8`](https://github.com/mantoni/mochify.js/commit/3179da828bbe913be7efd6002aba3a869bccfc66)
+  Migrate CI to GitHub actions (Frederik Ring)
+
+_Released by Frederik Ring on 2021-06-20._
+
+## 8.0.0
+
+- 💥 [`119d6f0`](https://github.com/mantoni/mochify.js/commit/119d6f0a678a32ce39fb381ce7819c7280fd202b)
+  Update mocaccino, mocha and puppeteer (Frederik Ring)
+- 💥 [`9655108`](https://github.com/mantoni/mochify.js/commit/965510885b7c262a603a2bd8a5caad68a688707b)
+  Drop node 10 support (Frederik Ring)
+- 📚 [`4147ccc`](https://github.com/mantoni/mochify.js/commit/4147ccc7ebc70b83db1d0fcbed0075a283429b18)
+  Document compatibility for v8.x
+- 🐛 [`9a706fe`](https://github.com/mantoni/mochify.js/commit/9a706febc9bb0e7318e07b0653028a009b4488d8)
+  Swallow deprecation notices about window.webkitStorageInfo (Frederik Ring)
+
+_Released by [Maximilian Antoni](https://github.com/mantoni) on 2021-05-25._
+
+## 7.1.1
+
+- 🐛 [`eb70de7`](https://github.com/mantoni/mochify.js/commit/eb70de7280cd7356962e3d602edba796cf816762)
+  Remove dependency on removed nyc feature (Albert Wang)
+- 🛡 [`59e4350`](https://github.com/mantoni/mochify.js/commit/59e4350f520d63a696e7c809a6a57ce796e3b76d)
+  Npm update (Albert Wang)
+- 📚 [`1bc13ff`](https://github.com/mantoni/mochify.js/commit/1bc13ffa4235e0ba0c2d3d3856ecba1a831c581e)
+  Update readme (Albert Wang)
+- ✨ [`b039a55`](https://github.com/mantoni/mochify.js/commit/b039a551f0f24b8643994fd1a96edcbbbc2b9a71)
+  Test with node 16 (Albert Wang)
+
+_Released by [Maximilian Antoni](https://github.com/mantoni) on 2021-05-23._
+
+## 7.1.0
+
+- 🍏 [`1248c7f`](https://github.com/mantoni/mochify.js/commit/1248c7ffd0a0e9342b35c173d05a770e12a860c2)
+  Upgrade puppeteer to v8
+- 🐛 [`b23b3bd`](https://github.com/mantoni/mochify.js/commit/b23b3bdf039c8b0f4b5af92b18c8ec05cd44f58f)
+  Workaround `PUPPETEER_EXECUTABLE_PATH` not being respected
+- 📚 [`2806265`](https://github.com/mantoni/mochify.js/commit/280626503f1c5e5c98d915a59280a9712e05bbfa)
+  Document workaround for Apple Silicon
+- 🛡 [`cccf180`](https://github.com/mantoni/mochify.js/commit/cccf1801aab72592235653622c9125c21fa8acd8)
+  Bump elliptic from 6.5.3 to 6.5.4 (dependabot[bot])
+- ✨ [`63f4dc5`](https://github.com/mantoni/mochify.js/commit/63f4dc59776207f7b5a3ce7f1543f15619307c28)
+  Update Studio Changes
+
+_Released by [Maximilian Antoni](https://github.com/mantoni) on 2021-04-20._
+
+## 7.0.0
+
+- 💥 [`4eb8c25`](https://github.com/mantoni/mochify.js/commit/4eb8c25fc61bd4c1213068c1a165fe429465300b)
+  Use Node LTS versions (Morgan Roderick)
+- 🍏 [`c2f2ffd`](https://github.com/mantoni/mochify.js/commit/c2f2ffd916254cdc3e303e4d7e8dae982c0e93b6)
+  Upgrade puppeteer to v5.3.1 (chrome-86)
+- 🍏 [`eaec923`](https://github.com/mantoni/mochify.js/commit/eaec923a80f2753ab42605233855e03ed05b0161)
+  Update browserify
+- 🍏 [`1f1dcac`](https://github.com/mantoni/mochify.js/commit/1f1dcac41eb2d44da181fe8d389f784fd1dab0ac)
+  Update min-wd
+- 🛡 [`6f54831`](https://github.com/mantoni/mochify.js/commit/6f54831446467bfefa3239274bb9902f68d9add9)
+  npm audit
+- ✨ [`298f173`](https://github.com/mantoni/mochify.js/commit/298f1734510c1bc588aedd2b4c18ad30f28c67bd)
+  Update coverify
+- ✨ [`9a004f9`](https://github.com/mantoni/mochify.js/commit/9a004f9e9ead81697501a47fe6883c65c161ebad)
+  Upgrade Studio Changes
+- ✨ [`e026ff3`](https://github.com/mantoni/mochify.js/commit/e026ff3c67e7cd98d17ad95157bb59dce0c563e9)
+  Upgrade ESLint to latest (Morgan Roderick)
+- 📚 [`82dc5c6`](https://github.com/mantoni/mochify.js/commit/82dc5c6484c1e75ae075efadb440d651eb998360)
+  Add compatibility notes for v7
+- 📚 [`62a3145`](https://github.com/mantoni/mochify.js/commit/62a31454590c5f502360dc4a7d58162e93e14be5)
+  State that `nyc@15` is not yet supported
+
+_Released by [Maximilian Antoni](https://github.com/mantoni) on 2020-11-10._
+
 ## 6.6.0
 
 - 🍏 [`615584c`](https://github.com/mantoni/mochify.js/commit/615584c083ccdb3ecca2e9568df6367870e31781)
